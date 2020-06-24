@@ -1,6 +1,15 @@
 <?php
+require_once get_theme_file_path('/lib/csf/cs-framework.php');
+require_once get_theme_file_path('/inc/metaboxes/section.php');
 
-if (site_url() == "http://localhost/wpdesign/") {
+define('CS_ACTIVE_FRAMEWORK', false);
+define('CS_ACTIVE_METABOX', true);
+define('CS_ACTIVE_TAXONOMY', false);
+define('CS_ACTIVE_SHORTCODE', false);
+define('CS_ACTIVE_CUSTOMIZE', false);
+
+
+if (site_url() == "http://mealtheme.me/") {
     define("VERSION", time());
 } else {
     define("VERSION", wp_get_theme()->get("Version"));
@@ -60,3 +69,10 @@ function meal_assets()
 }
 
 add_action('wp_enqueue_scripts', 'meal_assets');
+
+
+function meal_codestar_init()
+{
+    CSFramework_Metabox::instance(array( ));
+}
+add_action('init', 'meal_codestar_init');
