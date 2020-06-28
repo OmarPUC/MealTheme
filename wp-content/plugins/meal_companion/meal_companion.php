@@ -56,7 +56,7 @@ function mealc_register_my_cpts_section() {
     $labels = array(
         "name"           => __( "Recipes", "meal-companion" ),
         "singular_name"  => __( "Recipe", "meal-companion" ),
-        "featured_image" => __( 'Recipe Photo', 'meal-companion' )
+        "featured_image" => __( "Recipe Photo", "meal-companion" )
     );
 
     $args = array(
@@ -80,7 +80,7 @@ function mealc_register_my_cpts_section() {
         "menu_position"       => 5,
         "menu_icon"           => "dashicons-carrot",
         "supports"            => array( "title", "editor", "thumbnail","excerpt" ),
-        "taxonomies"          => array( 'category' )
+        "taxonomies"          => array( "category" )
     );
 
     register_post_type( "recipe", $args );

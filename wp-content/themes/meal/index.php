@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php
+get_header();
+?>
 
 <div class="main-wrap " id="section-home">
 
@@ -726,6 +728,8 @@
     </div> <!-- .section -->
 
     <div class="map-wrap" id="map" data-aos="fade"></div>
+
+
     <footer class="ftco-footer">
         <div class="container">
 
@@ -736,7 +740,7 @@
                         <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild
                             Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. </p>
                         <!-- <input type="submit" class="btn btn-primary btn-outline-primary" value="Send Message"> -->
-                        <p><a href="" target="_blank" class="btn btn-primary btn-outline-primary">More Templates</a></p>
+                        <p><a href="https://free-template.co" target="_blank" class="btn btn-primary btn-outline-primary">More Templates</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -773,13 +777,13 @@
 
             <div class="row pt-5">
                 <div class="col-md-12 text-center">
-                    <p>&copy; Copyright 2020. All Rights Reserved. Designed &amp; Developed by <a href="">Your Domain Name</a></p>
+                    <p>&copy; Copyright 2018. All Rights Reserved. Designed &amp; Developed by <a href="https://free-template.co/">Free-Template.co</a></p>
                 </div>
             </div>
         </div>
     </footer>
 
 </div>
-</div>
-
-<?php get_footer(); ?>
+<?php
+get_footer();
+?>

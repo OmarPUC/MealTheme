@@ -8,7 +8,7 @@ function meal_section_picker_metabox($metaboxes)
     }
 
     $current_page_template = get_post_meta($page_id, '_wp_page_template', true);
-    if (!in_array($current_page_template, array('template-parts/landing.php'))) {
+    if (!in_array($current_page_template, array('page-templates/landing.php'))) {
         return $metaboxes;
     }
 
