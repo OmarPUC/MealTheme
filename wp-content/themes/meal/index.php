@@ -4,11 +4,6 @@ get_header();
 
 <div class="main-wrap " id="section-home">
 
-    <?php
-    $section_id = 19;
-    get_template_part("section-templates/banner");
-    ?>
-
     <div class="section" data-aos="fade-up">
         <div class="container">
             <div class="row section-heading justify-content-center mb-5">
@@ -777,7 +772,7 @@ get_header();
 
             <div class="row pt-5">
                 <div class="col-md-12 text-center">
-                    <p>&copy; Copyright 2018. All Rights Reserved. Designed &amp; Developed by <a href="https://free-template.co/">Free-Template.co</a></p>
+                    <p>&copy; Copyright 2018. All Rights Reserved. Developed by <a href="#">Omar Sharif Ansary</a></p>
                 </div>
             </div>
         </div>

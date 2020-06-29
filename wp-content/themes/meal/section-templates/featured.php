@@ -21,7 +21,7 @@ $meal_section_description = $meal_section->post_content;
         <div class="row">
 
             <?php
-            // $meal_keys = array_keys($meal_section_meta['recipes']);
+            //$meal_keys = array_keys($meal_section_meta['recipes']);
             $meal_section_recipes = $meal_section_meta['recipes'];
             $meal_recipe_one = get_post($meal_section_recipes[7]['recipe']);
             $meal_recipe_two = get_post($meal_section_recipes[8]['recipe']);
@@ -32,7 +32,7 @@ $meal_section_description = $meal_section->post_content;
 
             <div class="ftco-46">
                 <div class="ftco-46-row d-flex flex-column flex-lg-row">
-                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_one,"large"));?>);"></div>
+                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_one, "large")); ?>);"></div>
                     <div class="ftco-46-text ftco-46-arrow-left">
                         <h4 class="ftco-46-subheading">
                             <?php echo esc_html(get_recipe_category($meal_recipe_one->ID)); ?>
@@ -41,10 +41,9 @@ $meal_section_description = $meal_section->post_content;
                         <p class="mb-5">
                             <?php echo esc_html($meal_recipe_one->post_excerpt); ?>
                         </p>
-                        <p><a href="<?php echo get_the_permalink($meal_recipe_one); ?>" class="btn-link"><?php _e('Learn More','meal'); ?> <span
-                                    class="ion-android-arrow-forward"></span></a></p>
+                        <p><a href="<?php echo get_the_permalink($meal_recipe_one); ?>" class="btn-link"><?php _e('Learn More', 'meal'); ?> <span class="ion-android-arrow-forward"></span></a></p>
                     </div>
-                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_three,"large"));?>);"></div>
+                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_three, "large")); ?>);"></div>
                 </div>
 
                 <div class="ftco-46-row d-flex flex-column flex-lg-row">
@@ -54,18 +53,16 @@ $meal_section_description = $meal_section->post_content;
                         <p class="mb-5">
                             <?php echo esc_html($meal_recipe_two->post_excerpt); ?>
                         </p>
-                        <p><a href="<?php echo get_the_permalink($meal_recipe_two); ?>" class="btn-link"><?php _e('Learn More','meal'); ?> <span
-                                    class="ion-android-arrow-forward"></span></a></p>
+                        <p><a href="<?php echo get_the_permalink($meal_recipe_two); ?>" class="btn-link"><?php _e('Learn More', 'meal'); ?> <span class="ion-android-arrow-forward"></span></a></p>
                     </div>
-                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_two,"large"));?>);"></div>
+                    <div class="ftco-46-image" style="background-image: url(<?php echo esc_url(get_the_post_thumbnail_url($meal_recipe_two, "large")); ?>);"></div>
                     <div class="ftco-46-text ftco-46-arrow-up">
                         <h4 class="ftco-46-subheading"><?php echo esc_html(get_recipe_category($meal_recipe_three->ID)); ?></h4>
                         <h3 class="ftco-46-heading"><?php echo esc_html($meal_recipe_three->post_title) ?></h3>
                         <p class="mb-5">
                             <?php echo esc_html($meal_recipe_three->post_excerpt); ?>
                         </p>
-                        <p><a href="<?php echo get_the_permalink($meal_recipe_three); ?>" class="btn-link"><?php _e('Learn More','meal'); ?> <span
-                                    class="ion-android-arrow-forward"></span></a></p>
+                        <p><a href="<?php echo get_the_permalink($meal_recipe_three); ?>" class="btn-link"><?php _e('Learn More', 'meal'); ?> <span class="ion-android-arrow-forward"></span></a></p>
                     </div>
                 </div>
             </div>
